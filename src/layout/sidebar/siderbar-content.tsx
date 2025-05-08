@@ -5,16 +5,27 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 const SideBarContent = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const path = pathname.split("/")?.[1];
+
+  console.log(path);
+
   return (
     <SidebarGroup>
       <SidebarMenu>
         {sideBarData.map((item) => (
           <SidebarMenuItem>
             <SidebarMenuButton
+              className={`cursor-pointer ${
+                item.link === `/${path}`
+                  ? " bg-primary hover:bg-primary hover:text-white text-white"
+                  : ""
+              }`}
               onClick={() => navigate(item.link)}
               tooltip={item.title}
             >
