@@ -7,6 +7,26 @@ const Routes = () => {
       lazy: async () => ({
         Component: (await import("@/layout/app-layout")).default,
       }),
+      children: [
+        {
+          index: true,
+          lazy: async () => ({
+            Component: (await import("@/pages/dashboard")).default,
+          }),
+        },
+        {
+          path: "/products",
+          lazy: async () => ({
+            Component: (await import("@/pages/products")).default,
+          }),
+        },
+        {
+          path: "/favourites",
+          lazy: async () => ({
+            Component: (await import("@/pages/favourite")).default,
+          }),
+        },
+      ],
     },
   ]);
   return <RouterProvider router={router} />;

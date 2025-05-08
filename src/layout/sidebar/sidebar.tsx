@@ -6,9 +6,9 @@ import {
 import NavHeader from "./nav-header";
 import SideBarContent from "./siderbar-content";
 
-const AppSideBar = () => {
+const AppSideBar = ({ ...props }: React.ComponentProps<typeof Sidebar>) => {
   return (
-    <Sidebar collapsible="icon">
+    <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <NavHeader />
       </SidebarHeader>
