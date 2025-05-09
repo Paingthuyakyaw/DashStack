@@ -1,5 +1,8 @@
 import { Chart } from "./components/chart";
+import { CustomerChart } from "./components/customer-chart";
+import { Estimate } from "./components/estimate-chart";
 import RangeCard from "./components/range-crad";
+import { SafeChart } from "./components/sale-chart";
 
 const Dashboard = () => {
   return (
@@ -10,6 +13,11 @@ const Dashboard = () => {
       </div>
       <div className=" mt-5">
         <Chart />
+      </div>
+      <div className=" gap-5 mt-5 grid grid-cols-3">
+        <CustomerChart />
+        <SafeChart />
+        <Estimate />
       </div>
     </div>
   );

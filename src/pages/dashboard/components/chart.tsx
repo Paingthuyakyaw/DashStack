@@ -24,109 +24,109 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 const chartData = [
-  { date: "2024-04-01", desktop: 222, mobile: 150 },
-  { date: "2024-04-02", desktop: 97, mobile: 180 },
-  { date: "2024-04-03", desktop: 167, mobile: 120 },
-  { date: "2024-04-04", desktop: 242, mobile: 260 },
-  { date: "2024-04-05", desktop: 373, mobile: 290 },
-  { date: "2024-04-06", desktop: 301, mobile: 340 },
-  { date: "2024-04-07", desktop: 245, mobile: 180 },
-  { date: "2024-04-08", desktop: 409, mobile: 320 },
-  { date: "2024-04-09", desktop: 59, mobile: 110 },
-  { date: "2024-04-10", desktop: 261, mobile: 190 },
-  { date: "2024-04-11", desktop: 327, mobile: 350 },
-  { date: "2024-04-12", desktop: 292, mobile: 210 },
-  { date: "2024-04-13", desktop: 342, mobile: 380 },
-  { date: "2024-04-14", desktop: 137, mobile: 220 },
-  { date: "2024-04-15", desktop: 120, mobile: 170 },
-  { date: "2024-04-16", desktop: 138, mobile: 190 },
-  { date: "2024-04-17", desktop: 446, mobile: 360 },
-  { date: "2024-04-18", desktop: 364, mobile: 410 },
-  { date: "2024-04-19", desktop: 243, mobile: 180 },
-  { date: "2024-04-20", desktop: 89, mobile: 150 },
-  { date: "2024-04-21", desktop: 137, mobile: 200 },
-  { date: "2024-04-22", desktop: 224, mobile: 170 },
-  { date: "2024-04-23", desktop: 138, mobile: 230 },
-  { date: "2024-04-24", desktop: 387, mobile: 290 },
-  { date: "2024-04-25", desktop: 215, mobile: 250 },
-  { date: "2024-04-26", desktop: 75, mobile: 130 },
-  { date: "2024-04-27", desktop: 383, mobile: 420 },
-  { date: "2024-04-28", desktop: 122, mobile: 180 },
-  { date: "2024-04-29", desktop: 315, mobile: 240 },
-  { date: "2024-04-30", desktop: 454, mobile: 380 },
-  { date: "2024-05-01", desktop: 165, mobile: 220 },
-  { date: "2024-05-02", desktop: 293, mobile: 310 },
-  { date: "2024-05-03", desktop: 247, mobile: 190 },
-  { date: "2024-05-04", desktop: 385, mobile: 420 },
-  { date: "2024-05-05", desktop: 481, mobile: 390 },
-  { date: "2024-05-06", desktop: 498, mobile: 520 },
-  { date: "2024-05-07", desktop: 388, mobile: 300 },
-  { date: "2024-05-08", desktop: 149, mobile: 210 },
-  { date: "2024-05-09", desktop: 227, mobile: 180 },
-  { date: "2024-05-10", desktop: 293, mobile: 330 },
-  { date: "2024-05-11", desktop: 335, mobile: 270 },
-  { date: "2024-05-12", desktop: 197, mobile: 240 },
-  { date: "2024-05-13", desktop: 197, mobile: 160 },
-  { date: "2024-05-14", desktop: 448, mobile: 490 },
-  { date: "2024-05-15", desktop: 473, mobile: 380 },
-  { date: "2024-05-16", desktop: 338, mobile: 400 },
-  { date: "2024-05-17", desktop: 499, mobile: 420 },
-  { date: "2024-05-18", desktop: 315, mobile: 350 },
-  { date: "2024-05-19", desktop: 235, mobile: 180 },
-  { date: "2024-05-20", desktop: 177, mobile: 230 },
-  { date: "2024-05-21", desktop: 82, mobile: 140 },
-  { date: "2024-05-22", desktop: 81, mobile: 120 },
-  { date: "2024-05-23", desktop: 252, mobile: 290 },
-  { date: "2024-05-24", desktop: 294, mobile: 220 },
-  { date: "2024-05-25", desktop: 201, mobile: 250 },
-  { date: "2024-05-26", desktop: 213, mobile: 170 },
-  { date: "2024-05-27", desktop: 420, mobile: 460 },
-  { date: "2024-05-28", desktop: 233, mobile: 190 },
-  { date: "2024-05-29", desktop: 78, mobile: 130 },
-  { date: "2024-05-30", desktop: 340, mobile: 280 },
-  { date: "2024-05-31", desktop: 178, mobile: 230 },
-  { date: "2024-06-01", desktop: 178, mobile: 200 },
-  { date: "2024-06-02", desktop: 470, mobile: 410 },
-  { date: "2024-06-03", desktop: 103, mobile: 160 },
-  { date: "2024-06-04", desktop: 439, mobile: 380 },
-  { date: "2024-06-05", desktop: 88, mobile: 140 },
-  { date: "2024-06-06", desktop: 294, mobile: 250 },
-  { date: "2024-06-07", desktop: 323, mobile: 370 },
-  { date: "2024-06-08", desktop: 385, mobile: 320 },
-  { date: "2024-06-09", desktop: 438, mobile: 480 },
-  { date: "2024-06-10", desktop: 155, mobile: 200 },
-  { date: "2024-06-11", desktop: 92, mobile: 150 },
-  { date: "2024-06-12", desktop: 492, mobile: 420 },
-  { date: "2024-06-13", desktop: 81, mobile: 130 },
-  { date: "2024-06-14", desktop: 426, mobile: 380 },
-  { date: "2024-06-15", desktop: 307, mobile: 350 },
-  { date: "2024-06-16", desktop: 371, mobile: 310 },
-  { date: "2024-06-17", desktop: 475, mobile: 520 },
-  { date: "2024-06-18", desktop: 107, mobile: 170 },
-  { date: "2024-06-19", desktop: 341, mobile: 290 },
-  { date: "2024-06-20", desktop: 408, mobile: 450 },
-  { date: "2024-06-21", desktop: 169, mobile: 210 },
-  { date: "2024-06-22", desktop: 317, mobile: 270 },
-  { date: "2024-06-23", desktop: 480, mobile: 530 },
-  { date: "2024-06-24", desktop: 132, mobile: 180 },
-  { date: "2024-06-25", desktop: 141, mobile: 190 },
-  { date: "2024-06-26", desktop: 434, mobile: 380 },
-  { date: "2024-06-27", desktop: 448, mobile: 490 },
-  { date: "2024-06-28", desktop: 149, mobile: 200 },
-  { date: "2024-06-29", desktop: 103, mobile: 160 },
-  { date: "2024-06-30", desktop: 446, mobile: 400 },
+  { date: "2024-04-01", Profit: 222, Sales: 150 },
+  { date: "2024-04-02", Profit: 97, Sales: 180 },
+  { date: "2024-04-03", Profit: 167, Sales: 120 },
+  { date: "2024-04-04", Profit: 242, Sales: 260 },
+  { date: "2024-04-05", Profit: 373, Sales: 290 },
+  { date: "2024-04-06", Profit: 301, Sales: 340 },
+  { date: "2024-04-07", Profit: 245, Sales: 180 },
+  { date: "2024-04-08", Profit: 409, Sales: 320 },
+  { date: "2024-04-09", Profit: 59, Sales: 110 },
+  { date: "2024-04-10", Profit: 261, Sales: 190 },
+  { date: "2024-04-11", Profit: 327, Sales: 350 },
+  { date: "2024-04-12", Profit: 292, Sales: 210 },
+  { date: "2024-04-13", Profit: 342, Sales: 380 },
+  { date: "2024-04-14", Profit: 137, Sales: 220 },
+  { date: "2024-04-15", Profit: 120, Sales: 170 },
+  { date: "2024-04-16", Profit: 138, Sales: 190 },
+  { date: "2024-04-17", Profit: 446, Sales: 360 },
+  { date: "2024-04-18", Profit: 364, Sales: 410 },
+  { date: "2024-04-19", Profit: 243, Sales: 180 },
+  { date: "2024-04-20", Profit: 89, Sales: 150 },
+  { date: "2024-04-21", Profit: 137, Sales: 200 },
+  { date: "2024-04-22", Profit: 224, Sales: 170 },
+  { date: "2024-04-23", Profit: 138, Sales: 230 },
+  { date: "2024-04-24", Profit: 387, Sales: 290 },
+  { date: "2024-04-25", Profit: 215, Sales: 250 },
+  { date: "2024-04-26", Profit: 75, Sales: 130 },
+  { date: "2024-04-27", Profit: 383, Sales: 420 },
+  { date: "2024-04-28", Profit: 122, Sales: 180 },
+  { date: "2024-04-29", Profit: 315, Sales: 240 },
+  { date: "2024-04-30", Profit: 454, Sales: 380 },
+  { date: "2024-05-01", Profit: 165, Sales: 220 },
+  { date: "2024-05-02", Profit: 293, Sales: 310 },
+  { date: "2024-05-03", Profit: 247, Sales: 190 },
+  { date: "2024-05-04", Profit: 385, Sales: 420 },
+  { date: "2024-05-05", Profit: 481, Sales: 390 },
+  { date: "2024-05-06", Profit: 498, Sales: 520 },
+  { date: "2024-05-07", Profit: 388, Sales: 300 },
+  { date: "2024-05-08", Profit: 149, Sales: 210 },
+  { date: "2024-05-09", Profit: 227, Sales: 180 },
+  { date: "2024-05-10", Profit: 293, Sales: 330 },
+  { date: "2024-05-11", Profit: 335, Sales: 270 },
+  { date: "2024-05-12", Profit: 197, Sales: 240 },
+  { date: "2024-05-13", Profit: 197, Sales: 160 },
+  { date: "2024-05-14", Profit: 448, Sales: 490 },
+  { date: "2024-05-15", Profit: 473, Sales: 380 },
+  { date: "2024-05-16", Profit: 338, Sales: 400 },
+  { date: "2024-05-17", Profit: 499, Sales: 420 },
+  { date: "2024-05-18", Profit: 315, Sales: 350 },
+  { date: "2024-05-19", Profit: 235, Sales: 180 },
+  { date: "2024-05-20", Profit: 177, Sales: 230 },
+  { date: "2024-05-21", Profit: 82, Sales: 140 },
+  { date: "2024-05-22", Profit: 81, Sales: 120 },
+  { date: "2024-05-23", Profit: 252, Sales: 290 },
+  { date: "2024-05-24", Profit: 294, Sales: 220 },
+  { date: "2024-05-25", Profit: 201, Sales: 250 },
+  { date: "2024-05-26", Profit: 213, Sales: 170 },
+  { date: "2024-05-27", Profit: 420, Sales: 460 },
+  { date: "2024-05-28", Profit: 233, Sales: 190 },
+  { date: "2024-05-29", Profit: 78, Sales: 130 },
+  { date: "2024-05-30", Profit: 340, Sales: 280 },
+  { date: "2024-05-31", Profit: 178, Sales: 230 },
+  { date: "2024-06-01", Profit: 178, Sales: 200 },
+  { date: "2024-06-02", Profit: 470, Sales: 410 },
+  { date: "2024-06-03", Profit: 103, Sales: 160 },
+  { date: "2024-06-04", Profit: 439, Sales: 380 },
+  { date: "2024-06-05", Profit: 88, Sales: 140 },
+  { date: "2024-06-06", Profit: 294, Sales: 250 },
+  { date: "2024-06-07", Profit: 323, Sales: 370 },
+  { date: "2024-06-08", Profit: 385, Sales: 320 },
+  { date: "2024-06-09", Profit: 438, Sales: 480 },
+  { date: "2024-06-10", Profit: 155, Sales: 200 },
+  { date: "2024-06-11", Profit: 92, Sales: 150 },
+  { date: "2024-06-12", Profit: 492, Sales: 420 },
+  { date: "2024-06-13", Profit: 81, Sales: 130 },
+  { date: "2024-06-14", Profit: 426, Sales: 380 },
+  { date: "2024-06-15", Profit: 307, Sales: 350 },
+  { date: "2024-06-16", Profit: 371, Sales: 310 },
+  { date: "2024-06-17", Profit: 475, Sales: 520 },
+  { date: "2024-06-18", Profit: 107, Sales: 170 },
+  { date: "2024-06-19", Profit: 341, Sales: 290 },
+  { date: "2024-06-20", Profit: 408, Sales: 450 },
+  { date: "2024-06-21", Profit: 169, Sales: 210 },
+  { date: "2024-06-22", Profit: 317, Sales: 270 },
+  { date: "2024-06-23", Profit: 480, Sales: 530 },
+  { date: "2024-06-24", Profit: 132, Sales: 180 },
+  { date: "2024-06-25", Profit: 141, Sales: 190 },
+  { date: "2024-06-26", Profit: 434, Sales: 380 },
+  { date: "2024-06-27", Profit: 448, Sales: 490 },
+  { date: "2024-06-28", Profit: 149, Sales: 200 },
+  { date: "2024-06-29", Profit: 103, Sales: 160 },
+  { date: "2024-06-30", Profit: 446, Sales: 400 },
 ];
 
 const chartConfig = {
   visitors: {
     label: "Visitors",
   },
-  desktop: {
-    label: "Desktop",
+  Profit: {
+    label: "Profit",
     color: "hsl(var(--chart-1))",
   },
-  mobile: {
-    label: "Mobile",
+  Sales: {
+    label: "Sales",
     color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig;
@@ -150,9 +150,9 @@ export function Chart() {
 
   return (
     <Card>
-      <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
+      <CardHeader className="flex items-center gap-2 space-y-0 border-b py-0 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
-          <CardTitle>Area Chart - Interactive</CardTitle>
+          <CardTitle>Sales Details</CardTitle>
           <CardDescription>
             Showing total visitors for the last 3 months
           </CardDescription>
@@ -184,7 +184,7 @@ export function Chart() {
         >
           <AreaChart data={filteredData}>
             <defs>
-              <linearGradient id="fillDesktop" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fillProfit" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
                   stopColor=" oklch(0.577 0.245 27.325)"
@@ -196,7 +196,7 @@ export function Chart() {
                   stopOpacity={0.1}
                 />
               </linearGradient>
-              <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fillSales" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="5%"
                   stopColor="oklch(0.398 0.07 227.392)"
@@ -239,16 +239,16 @@ export function Chart() {
               }
             />
             <Area
-              dataKey="mobile"
+              dataKey="Sales"
               type="natural"
-              fill="url(#fillMobile)"
+              fill="url(#fillSales)"
               stroke="oklch(0.398 0.07 227.392)"
               stackId="a"
             />
             <Area
-              dataKey="desktop"
+              dataKey="Profit"
               type="natural"
-              fill="url(#fillDesktop)"
+              fill="url(#fillProfit)"
               stroke=" oklch(0.577 0.245 27.325)"
               stackId="a"
             />
