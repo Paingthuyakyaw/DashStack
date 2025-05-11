@@ -62,6 +62,9 @@ export function Estimate() {
         <div className="flex items-center gap-2 font-medium leading-none">
           Trending up by 5.2% 3 months <TrendingUp className="h-4 w-4" />
         </div>
+        <p className="leading-none text-muted-foreground">
+          Showing trend for last 7 days
+        </p>
       </CardFooter>
     </Card>
   );
