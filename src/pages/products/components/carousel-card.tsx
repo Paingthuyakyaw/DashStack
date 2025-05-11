@@ -21,12 +21,23 @@ const CarouseCard = () => {
       <CarouselContent>
         {carouselData.map((item) => (
           <CarouselItem key={item.id}>
-            <AspectRatio ratio={16 / 5}>
-              <img
-                src={item.img}
-                className=" h-full  lg:h-[340px] w-full object-cover object-center rounded-lg "
-              />
-            </AspectRatio>
+            <div className=" md:block hidden">
+              <AspectRatio ratio={16 / 4}>
+                <img
+                  src={item.img}
+                  className=" h-full  w-full object-cover object-center rounded-lg "
+                />
+              </AspectRatio>
+            </div>
+
+            <div className=" md:hidden">
+              <AspectRatio className=" md:hidden " ratio={16 / 6}>
+                <img
+                  src={item.img}
+                  className=" h-full  w-full object-cover object-center rounded-lg "
+                />
+              </AspectRatio>
+            </div>
           </CarouselItem>
         ))}
       </CarouselContent>

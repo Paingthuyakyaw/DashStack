@@ -3,7 +3,7 @@ import { StarIcon } from "lucide-react";
 
 const CardItem = () => {
   return (
-    <div className=" grid gap-5 grid-cols-3">
+    <div className=" grid gap-2 md:gap-5 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
       {smartWatchItem.map((wat) => (
         <div
           className=" dark:bg-white  overflow-hidden dark:border-stroke border-2   rounded-xl w-full"
@@ -11,7 +11,7 @@ const CardItem = () => {
         >
           <img
             src={wat.img}
-            className=" w-full h-[250px] object-contain"
+            className=" w-full h-[180px] md:h-[250px] object-contain"
             alt={wat.name}
           />
 

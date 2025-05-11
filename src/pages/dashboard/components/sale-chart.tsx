@@ -24,11 +24,11 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
-  { month: "January", desktop: 0, number: 100 },
-  { month: "February", desktop: 50, number: 75 },
-  { month: "March", desktop: 44, number: 50 },
-  { month: "April", desktop: 80, number: 25 },
-  { month: "May", desktop: 95, number: 0 },
+  { month: "January", sale: 0, number: 100 },
+  { month: "February", sale: 50, number: 75 },
+  { month: "March", sale: 44, number: 50 },
+  { month: "April", sale: 80, number: 25 },
+  { month: "May", sale: 95, number: 0 },
 ];
 
 const chartConfig = {
@@ -81,7 +81,7 @@ export function SafeChart() {
               content={<ChartTooltipContent indicator="line" />}
             />
             <Line
-              dataKey="desktop"
+              dataKey="sale"
               type="natural"
               stroke="var(--color-desktop)"
               strokeWidth={2}

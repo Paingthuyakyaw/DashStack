@@ -25,7 +25,7 @@ const AppLayout = () => {
             </div>
           </div>
         </header>
-        <div className=" px-4 pt-4 ">
+        <div className=" px-2 md:px-4 pt-4 ">
           <Suspense>
             <Outlet />
           </Suspense>
