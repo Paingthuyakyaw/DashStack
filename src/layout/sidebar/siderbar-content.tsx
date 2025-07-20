@@ -19,7 +19,7 @@ const SideBarContent = () => {
     <SidebarGroup>
       <SidebarMenu>
         {sideBarData.map((item) => (
-          <SidebarMenuItem>
+          <SidebarMenuItem key={item.id}>
             <SidebarMenuButton
               className={`cursor-pointer ${
                 item.link === `/${path}`
