@@ -15,8 +15,11 @@ export interface favProps {
 }
 
 export const createFavouriteSlice: StateCreator<favProps> = (set) => {
+  const localCard = localStorage.getItem("fav")
+    ? JSON.parse(localStorage.getItem("fav") as string)
+    : [];
   return {
-    card: [],
+    card: localCard,
     setCard: (data) =>
       set((state) => {
         const filter = state.card.some((da) => da.id === data.id)

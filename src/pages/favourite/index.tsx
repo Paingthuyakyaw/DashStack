@@ -10,7 +10,7 @@ const Favourite = () => {
       <div className=" mt-2 grid gap-2 md:gap-5 grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
         {card.map((wat) => (
           <div
-            className=" dark:bg-white  overflow-hidden dark:border-stroke border-2   rounded-xl w-full"
+            className=" dark:bg-white  overflow-hidden dark:border-neutral-900 border-2   rounded-xl w-full"
             key={wat.id}
           >
             <img
@@ -19,7 +19,7 @@ const Favourite = () => {
               alt={wat.name}
             />
 
-            <div className="  p-4 bg-white dark:bg-secondary ">
+            <div className="  p-4 bg-white dark:bg-neutral-800 ">
               <div className=" flex items-center justify-between ">
                 <h5 className=" font-semibold text-foreground">{wat.name}</h5>
                 <p onClick={() => setCard(wat)} className=" cursor-pointer">

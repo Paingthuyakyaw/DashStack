@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
+import { inboRouter } from "./inbox.route";
 
 const Routes = () => {
   const router = createBrowserRouter([
@@ -26,6 +27,7 @@ const Routes = () => {
             Component: (await import("@/pages/favourite")).default,
           }),
         },
+        ...inboRouter,
       ],
     },
   ]);
