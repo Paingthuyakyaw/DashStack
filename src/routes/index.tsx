@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
-import { inboRouter } from "./inbox.route";
+import { inboRouter } from "./inbox/inbox.route";
 
 const Routes = () => {
   const router = createBrowserRouter([

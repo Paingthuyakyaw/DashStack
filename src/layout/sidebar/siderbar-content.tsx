@@ -13,8 +13,6 @@ const SideBarContent = () => {
 
   const path = pathname.split("/")?.[1];
 
-  console.log(path);
-
   return (
     <SidebarGroup>
       <SidebarMenu>
