@@ -13,8 +13,8 @@ const AppLayout = () => {
   return (
     <SidebarProvider>
       <AppSideBar />
-      <SidebarInset className=" bg-[#F5F6FA] dark:bg-black">
-        <header className="flex  border-b sticky top-0  dark:bg-black bg-white z-30 h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
+      <SidebarInset className=" bg-[#F5F6FA] dark:bg-dash ">
+        <header className="flex  border-b sticky top-0  dark:bg-dash bg-white z-30 h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
           <div className=" flex w-full items-center px-4 justify-between">
             <div className="flex  items-center gap-2 ">
               <SidebarTrigger className="-ml-1" />
