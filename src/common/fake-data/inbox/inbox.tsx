@@ -7,71 +7,6 @@ import {
   IconStar,
 } from "@tabler/icons-react";
 
-export const slideMail = [
-  {
-    id: 1,
-    title: "My Email",
-    children: [
-      {
-        id: 11,
-        title: "Inbox",
-        count: 1253,
-        icon: (className?: string) => <IconMailFilled className={className} />,
-        link: "/inbox",
-      },
-      {
-        id: 12,
-        title: "Starred",
-        count: 5,
-        icon: (className?: string) => <IconStar className={className} />,
-        link: "/inbox/star",
-      },
-      {
-        id: 13,
-        title: "Sent",
-        count: "23,000",
-        icon: (className?: string) => <IconSend className={className} />,
-        link: "/inbox/sent",
-      },
-      {
-        id: 14,
-        title: "Draft",
-        count: "03",
-        icon: (className?: string) => <IconPencil className={className} />,
-        link: "/inbox/draft",
-      },
-      {
-        id: 14,
-        title: "Span",
-        count: "10",
-        icon: (className?: string) => (
-          <IconAlertTriangle className={className} />
-        ),
-        link: "/inbox/span",
-      },
-      {
-        id: 15,
-        title: "Important",
-        count: "18",
-        icon: (className?: string) => <IconBubbleText className={className} />,
-        link: "/inbox/important",
-      },
-      {
-        id: 16,
-        title: "Bin",
-        count: "11",
-        icon: (className?: string) => <IconBubbleText className={className} />,
-        link: "/inbox/bin",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Label",
-    children: [],
-  },
-];
-
 export const InboxData = [
   {
     id: 27,
@@ -261,5 +196,70 @@ export const InboxData = [
     type: "Primary",
     description: "Our Bachelor of Commerce program is ACBSP-accredited.",
     date: "2025-07-01",
+  },
+];
+
+export const slideMail = [
+  {
+    id: 1,
+    title: "My Email",
+    children: [
+      {
+        id: 11,
+        title: "Inbox",
+        count: InboxData?.length,
+        icon: (className?: string) => <IconMailFilled className={className} />,
+        link: "/inbox",
+      },
+      {
+        id: 12,
+        title: "Starred",
+        count: 0,
+        icon: (className?: string) => <IconStar className={className} />,
+        link: "/inbox/star",
+      },
+      {
+        id: 13,
+        title: "Sent",
+        count: "23,000",
+        icon: (className?: string) => <IconSend className={className} />,
+        link: "/inbox/sent",
+      },
+      {
+        id: 14,
+        title: "Draft",
+        count: "03",
+        icon: (className?: string) => <IconPencil className={className} />,
+        link: "/inbox/draft",
+      },
+      {
+        id: 14,
+        title: "Span",
+        count: "10",
+        icon: (className?: string) => (
+          <IconAlertTriangle className={className} />
+        ),
+        link: "/inbox/span",
+      },
+      {
+        id: 15,
+        title: "Important",
+        count: "18",
+        icon: (className?: string) => <IconBubbleText className={className} />,
+        link: "/inbox/important",
+      },
+      {
+        id: 16,
+        title: "Bin",
+        count: "11",
+        icon: (className?: string) => <IconBubbleText className={className} />,
+        link: "/inbox/bin",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Label",
+    children: [],
   },
 ];

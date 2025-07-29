@@ -8,15 +8,17 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 import { Input } from "@/components/ui/input";
 
 const Mail = () => {
-  const { record, totalPage } = UsePagination(InboxData);
-  const { setPage, page } = UseParam({ pageSize: 14 });
-  console.log({ totalPage });
+  const { record, totalPage, setSearch } = UsePagination(InboxData);
+  const { setPage, page } = UseParam({ pageSize: 13 });
 
   return (
     <div>
       <div className=" mb-4 flex justify-end">
         <div className=" w-[300px] ">
-          <Input placeholder="Search..." />
+          <Input
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search..."
+          />
         </div>
       </div>
       <div className=" h-[79vh] overflow-hidden ">

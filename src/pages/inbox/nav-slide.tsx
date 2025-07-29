@@ -1,10 +1,17 @@
-import { slideMail } from "@/common/fake-data/inbox/inbox";
+import { InboxData, slideMail } from "@/common/fake-data/inbox/inbox";
 import { Button } from "@/components/ui/button";
+import { useStoer } from "@/store/client";
 import { useLocation, useNavigate } from "react-router";
 
 const NavSlider = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const { star } = useStoer();
+
+  const count = new Map([
+    ["Inbox", InboxData.length],
+    ["Starred", star.length],
+  ]);
 
   return (
     <div className=" dark:bg-neutral-800 bg-gray-100 border p-4 w-full h-[90vh] rounded-md ">
@@ -31,7 +38,7 @@ const NavSlider = () => {
                     <p>{da.icon(" w-5 h-4 ")}</p>
                     <p>{da.title}</p>
                   </div>
-                  <p>{da.count}</p>
+                  <p>{count.get(da.title) || da.count}</p>
                 </div>
               ))}
             </div>
